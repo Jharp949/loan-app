@@ -1,0 +1,60 @@
+/*
+Author: James Harper
+Title: loan-calc.component.css
+Date: 12/17/23
+Description: CSS for the loan-calc component
+*/
+
+.calculator-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: gold;
+  border: 3px solid gold;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+label {
+  font-size: 24px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input:focus {
+
+  outline: 2px solid gold;
+}
+
+.calculate-button {
+  background-color: black;
+  color: gold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.calculate-button:hover {
+  background-color: gold;
+  color: black;
+  transition: .3s;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 48px;
+}

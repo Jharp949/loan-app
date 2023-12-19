@@ -1,0 +1,30 @@
+<!--
+Author: James Harper
+Title: loan-calc.component.html
+Date: 12/17/23
+Description: HTML for the loan-calc component
+-->
+
+<div class="calculator-container">
+  <h2>Loan Calculator</h2>
+
+  <div class="input-container">
+    <label for="principal" style="color: rgb(248, 248, 248);">Principal Amount:</label>
+    <input type="number" [(ngModel)]="principal" name="principal" id="principal" />
+  </div>
+
+  <div class="input-container">
+    <label for="rate" style="color: rgb(248, 248, 248);">Annual Interest Rate (%):</label>
+    <input type="number" [(ngModel)]="annualRate" name="rate" id="rate" />
+  </div>
+
+  <div class="input-container">
+    <label for="years" style="color: rgb(248, 248, 248);">Number of Years:</label>
+    <input type="number" [(ngModel)]="years" name="years" id="years" />
+  </div>
+
+  <button class="calculate-button" (click)="calculateLoanDetails()">Calculate</button>
+
+  <p class="result">Monthly Payment: <span style="color: rgb(248, 248, 248);">{{ monthlyPayment | currency:'USD':'symbol':'1.2-2' }}</span></p>
+  <p class="result">Total Interest Paid: <span style="color: rgb(248, 248, 248);">{{ totalInterest | currency:'USD':'symbol':'1.2-2' }}</span></p>
+</div>

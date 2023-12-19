@@ -1,0 +1,22 @@
+<!--
+Author: James Harper
+Title: navbar.component.html
+Date: 12/17/23
+Description: HTML for the navbar component
+-->
+
+<mat-toolbar class="navbar">
+
+    <a href="/home">
+      <img class="logo" src="../../assets/hufflepuff.png" alt="logo" height="50px" width="50px">
+    </a>
+
+  <span class="spacer"></span>
+
+    <div class="links">
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/about">About</button>
+      <button mat-button routerLink="/contact">Contact</button>
+    </div>
+
+</mat-toolbar>

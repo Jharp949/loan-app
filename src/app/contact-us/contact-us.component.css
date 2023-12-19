@@ -1,0 +1,28 @@
+/*
+Author: James Harper
+Title: contact-us.component.css
+Date: 12/17/23
+Description: CSS for the contact page
+*/
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h1, h2 {
+  color: gold;
+}
+
+p {
+  color: rgb(248, 248, 248);
+  font-size: 24px;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+}
